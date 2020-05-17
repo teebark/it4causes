@@ -1,0 +1,66 @@
+/*
+Theme Name: Vantage Child
+Author: T.Barker
+Author URI: http://it4causes.org
+Theme URI: http://siteorigin.com/theme/vantage
+Description: Vantage Child Theme
+Version: 1.0.0
+Template: vantage
+Text Domain: vantage
+Domain Path: /languages/
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/* Assign color variables */
+:root {
+  --theme-brown: #F3B71C;
+  --theme-green: #68C722;
+  --theme-blue:  #0069B5;
+}
+.volunteer-buttons .wp-block-button {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+}
+/* Eliminate borders on sidebar buttons */
+#origin_call-to-action-2 .origin-widget,
+#origin_call-to-action-3 .origin-widget,
+#origin_call-to-action-4 .origin-widget,
+#origin_call-to-action-5 .origin-widget {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+/* Set buttons on sidebar to theme colors */
+#origin_call-to-action-2 .origin-widget.origin-widget-button-vantage_flat-light_blue a {
+	background:  var(--theme-blue, lightblue);
+	border-bottom-color:  var(--theme-blue, lightblue);
+	width: 130px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	padding: 11px 25px 10px 25px;
+}
+#origin_call-to-action-3 .origin-widget.origin-widget-button-vantage_flat-green a {
+	background:  var(--theme-green, lightgreen);
+	border-bottom-color: var(--theme-green, lightgreen);
+	width: 130px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	padding: 11px 25px 10px 25px;
+}
+#origin_call-to-action-4 .origin-widget.origin-widget-button-vantage_flat-orange a {
+	background:  var(--theme-brown, lightbrown);
+	border-bottom-color:  var(--theme-brown, lightbrown);
+	width: 130px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	padding: 11px 25px 10px 25px;
+}
+#origin_call-to-action-5 .origin-widget.origin-widget-button-vantage_flat-light_blue a {
+	background: var(--theme-blue, lightblue);
+	border-bottom-color: var(--theme-blue, lightblue);
+	width: 130px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	padding: 11px 25px 10px 25px;
+}
