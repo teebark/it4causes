@@ -1,0 +1,3 @@
+Created child page, vantage child.
+Added CSS to reflect right sidebar buttons with theme colors from the it4 logo.
+Added githup page, github.com/teebark/it4causes.
