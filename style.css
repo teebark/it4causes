@@ -1,0 +1,421 @@
+/*
+ Theme Name:   IT4causes GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Assign color variables */
+:root {
+	--blue:       #4066c8;
+	--dark-blue:  #20124c;
+	--gold:       #f3b71c;
+	--light-gold: #e9cf3a;
+	--gray:       #efefef;
+	--light-gray: #f2f2f2;
+}
+/* Gutenberg color palette */
+.has-blue-color {
+	color: #4066c8;
+}
+.has-blue-background-color {
+	background-color: #4066c8;
+}
+.has-darkblue-color {
+	color: #20124c;
+}
+.has-darkblue-background-color {
+	background-color: #20124c;
+}
+.has-gold-color {
+	color: #f3b71c;
+}
+.has-gold-background-color {
+	background-color: #f3b71c;
+}
+.has-lightgold-color {
+	color: #e9cf3a;
+}
+.has-lightgold-background-color {
+	background-color: #e9cf3a;
+}
+.has-gray-color {
+	color: #efefef;
+}
+.has-gray-background-color {
+	background-color: #efefef;
+}
+.has-lightgray-color {
+	color: #f2f2f2;
+}
+.has-lightgray-background-color {
+	background-color: #f2f2f2;
+}
+.has-black-color {
+	color: #000000;
+}
+.has-black-background-color {
+	background-color: #000000;
+}
+.has-white-color {
+	color: #ffffff;
+}
+.has-white-background-color {
+	background-color: #ffffff;
+}
+/* Override theme adding h2 and h3 css whenever a background is added */
+h2,
+h2.has-background {
+	padding-top: .5rem !important;
+	padding-bottom: .5rem !important;
+	margin-bottom: 0 !important;
+}
+h3,
+h3.has-background {
+	padding-top: 1rem !important;
+	padding-bottom: .5rem !important;
+	margin-bottom: 0 !important;
+}
+h3:first-child,
+h3.has-background:first-child {
+	padding-top: 0 !important;
+}
+
+/* Top bar image height for guidestar */
+.top-bar img {
+	height: 60px;
+}
+/* Get rid of space between navbar and hero image */
+#main {
+	margin-top: 0;
+}
+#menu-main {
+	background: white;
+}
+.navigation-search input[type="search"],
+.navigation-search input[type="search"]:focus,
+.navigation-search input[type="search"]:active {
+	background-color: var(--light-gray,lightgray);
+	/* opacity: 0; */
+	color: black;
+}
+.home .inside-article,
+.home .wp-block-group__inner-container {
+	padding-top: 0;
+}
+/* Hero title alignment */
+.home .wp-block-cover.alignfull {
+	justify-content: center;
+}
+/* Change color of home title and blur background */
+h1.hero-title {
+	color: var(--dark-blue,blue);
+	background: rgba(255,255,255,0.5);
+	box-shadow: 4px 4px 4px rgb(255 255 255 / 30%), -4px -4px 4px rgb(255 255 255 / 30%);
+	/* text-shadow: 0 0 3px white; */
+	/* backdrop-filter: blur(5px) brightness(1.5) opacity(.2); */
+}
+.home .wp-block-buttons {
+	flex-direction: row !important;
+	justify-content: center !important;
+}
+h1.services-title,
+h1.volunteer-title {
+	font-size: 2rem;
+	font-weight: 900;
+	color: white;
+	/* text-shadow: 1px 1px 0 black; */
+	display: table-cell;
+}
+/* Turn off the gray background for these pages */
+.search h2,
+.blog h2 {
+	/* background: transparent; */
+	padding-bottom: 0;
+}
+.search .entry-summary {
+	margin-top: 0;
+}
+/* Highlight Tech Problems header */
+h2.tech-problems {
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 0 black;
+	background: transparent;
+	color: var(--blue,blue);
+}
+/*
+.wp-block-columns,
+ul {
+	background: var(--light-gray,lightgray);
+}
+*/
+/* Add space at bottom of content */
+.wp-block-column:last-child,
+ul.list-indent li:last-child:only-child {
+	padding-bottom: 1rem;
+	/* background: var(--light-gray,lightgray); */
+}
+/* Set the cover image for relative positioning for the */
+/* following hero titile position                       */
+.home .wp-block-cover {
+	position: relative;
+}
+/* Line up hero title, button */
+.home .wp-block-cover__inner-container {
+	position: absolute;
+	top: 65%;
+}
+.home .wp-block-cover__inner-container,
+.services .wp-block-cover__inner-container,
+.volunteer .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.home .wp-block-cover__inner-container h1 {
+	margin-bottom: 0;
+}
+.services .wp-block-cover__inner-container h1,
+.volunteer .wp-block-cover__inner-container h1 {
+	margin-top: 40%;
+}
+/* Center key stats cards */
+.home .wp-block-columns {
+	justify-content: center;
+}
+/* Control size of gallery items */
+.home .wp-block-gallery.resize ul.blocks-gallery-grid > * {
+	max-width: 100px;
+}
+.home .wp-block-gallery.resize {
+	justify-content: center;
+}
+.home ul.blocks-gallery-grid {
+	align-items: center;
+}
+/* .home .wp-block-gallery {
+	max-width: 600px;
+} */
+/* Center buttons */
+.home .wp-block-buttons,
+.volunteer .wp-block-buttons {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	/* background-color: #2e3b7d; */
+	/* border-radius: 8px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Format cover button */
+.home .volunteer a.wp-block-button__link,
+.home .get-started a.wp-block-button__link,
+.services .talk-to-us a.wp-block-button__link,
+.volunteer .get-involved a.wp-block-button__link {
+	margin-top: 10px;
+	background-color: var(--blue,blue);
+	border-radius: 1rem;
+}
+/* Center align circumstances list */
+.home ul.circumstances-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Format buttons on page */
+.home .wp-block-button  {
+	display: flex;
+	justify-content: center;
+}
+/* Button background */
+/*
+ul + div[class="wp-block-buttons"] {
+	background: var(--light-gray,lightgray);
+}
+*/
+/* Spacing between list items */
+ul.list-indent > li {
+	margin-bottom: .5rem;
+}
+/* Format cards */
+.core-service .ugb-card__content {
+	background: var(--gold,gold);
+}
+
+.core-service .ugb-main-block {
+	padding-top: 1rem;
+}
+/* Center align expect list */
+.home ul.expect-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Format button Get Started */
+.home .wp-block-button.all-services  {
+	display: flex;
+	justify-content: center;
+}
+.home .all-services .wp-block-buttons {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	/* background-color: #2e3b7d; */
+	border-radius: 8px;
+}
+/* Format blog section */
+.wp-show-posts article .wp-show-posts-inner {
+	border: var(--light-gray,lightgray) solid 4px;
+	padding: 1rem;
+}
+/* Button color */
+/*
+.home .all-services a.wp-block-button__link {
+	margin: 5px 0 0 0;
+	background-color: var(--blue,blue);
+}*/
+/* Footer settings */
+#footer-widgets {
+	color: white;
+	background: #3a3a3a;
+	line-height: 0;
+}
+.footer-widget-1 h2 {
+	padding-bottom:20px !important;
+}
+#footer-widgets h3 {
+	font-size: 2rem;
+	/* text-align: center; */
+	background: transparent;
+}
+.footer-widget-2 img {
+	margin-left: 25px;
+}
+hr.wp-block-separator {
+	margin-bottom: 1.5rem;
+	background: transparent;
+}
+/* karim */
+.home .wp-show-posts-columns .wp-show-posts-single {
+    display: block;
+    width: 340px;
+}
+.home .wp-show-posts article .wp-show-posts-inner {
+/*     border: var(--light-gray,lightgray) solid 4px; */
+    padding: 0px;
+}
+
+.home .ugb-card__item {
+	height: 100px;
+}
+
+.home .ugb-card__content {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .ugb-card.ugb-card--v2 .ugb-block-content {
+    grid-gap: 1rem;
+}
+
+.home .wp-show-posts-entry-header {
+    padding-left: 1rem;
+		padding-right: 1rem;
+}
+
+.home .wp-show-posts-entry-content, .wp-show-posts-entry-summary {
+    padding-left: 1rem;
+    padding-right: 1rem;
+	  padding-bottom: 1rem;
+}
+
+.home ol.has-background, ul.has-background {
+    margin-left: 0;
+}
+/*spacing after cards on home page */
+.home .entry-content > [class*="wp-block-"]:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/*spacing after cards which have images in them*/
+.volunteer .ugb-797fc0f.ugb-card {
+    padding-bottom: 1rem;
+}
+/* kenton */
+.services ul li { list-style-position: inside; }
+/* This selector already exists, but needs to be modified to fix the spacing between unordered lists */
+.services ul, ul.has-background {
+		padding-top: 0.5rem !important;
+		padding-bottom: 1.75rem !important;
+		margin-bottom: 0 !important;
+		margin-left: 0 !important;
+}
+
+/* Fix Image Padding */
+.wp-block-cover {
+	margin-top: 25px;
+	margin-left: -40px;
+	width: calc(100% + 80px);
+}
+@media (min-width: 1025px) {
+/* Shift navbar to right on desktop ----------------------------------------------------------------------- */
+#site-navigation .navigation-branding {
+	margin-right: 100px;
+	}
+/* Search bar width */
+.navigation-search {
+	top: 5rem;
+	width: 30rem;
+	margin-left: 50vw;
+	background-color: var(--light-gray,lightgray);
+}
+
+ul {
+	margin:0;
+}
+/* Indent lists */
+ul.list-indent,
+ol.list-indent {
+	padding: 0 15rem 0 15rem;
+	}
+/* Add spacing to bottom */
+ul.list-indent:last-child:only-child,
+ol.list-indent:last-child:only-child {
+	margin-bottom: 1rem;
+	}
+/* Indent lists, no decoration  */
+ul.list-indent-plain {
+	padding: 0 15rem 0 15rem;
+	list-style: none;
+	}
+ul,
+ul.has-background {
+	padding-top: 1rem !important;
+	padding-bottom: .5rem !important;
+	margin-bottom: 0 !important;
+	margin-left: 1rem !important;
+	}
+}
+/* Decrease item spacing in mobile hamburger drop downs --------------------------------------------------- */
+@media (max-width: 768px) {
+.main-navigation .main-nav ul li a {
+	line-height: 30px;
+	}
+h1.hero-title {
+	font-size: 1.2rem;
+}
+ul,
+ul.has-background {
+	padding-top: 1rem !important;
+	padding-bottom: .5rem !important;
+	margin-bottom: 0 !important;
+	margin-left: 0 !important;
+	}
+}
